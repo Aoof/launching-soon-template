@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching soon template</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <script src="/main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="countdown-container">
+            <div class="countdown">
+            </div>
+            <script>
+                $(".countdown").countdown('2021/4/1 12:00', function(event) {
+                    var $this = $(this).html(event.strftime(''
+                    + '<div class="weeks"><span>%w</span><div>Weeks</div></div>'
+                    + '<div class="days"><span>%d</span><div>Days</div></div>'
+                    + '<div class="hours"><span>%H</span><div>Hours</div></div>'
+                    + '<div class="minutes"><span>%M</span><div>Minutes</div></div>'
+                    + '<div class="seconds"><span>%S</span><div>Seconds</div></div>'));
+                });
+            </script>
+        </div>
+        <div class="stayTuned-container">
+            <div class="title-1">STAY TUNED</div>
+            <div class="title-2">Launching Soon</div>
+
+            <div class="contacts">
+                <ul>
+                    <li><a href="#" class="contacts-link"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="contacts-link"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#" class="contacts-link"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

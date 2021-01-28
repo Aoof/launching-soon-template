@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html, body {
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  position: relative;
+}
+
+main div {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: stretch;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+main .countdown-container {
+  color: white;
+  background: #00d4ff;
+  background: radial-gradient(circle, #00d4ff 0%, #78aef2 100%);
+  padding: 100% 0;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: stretch;
+}
+
+main .countdown-container .countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .countdown-container .countdown span {
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Montserrat";
+}
+
+main .countdown-container .countdown div {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+main .stayTuned-container .title-1 {
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  letter-spacing: 5px;
+}
+
+main .stayTuned-container .title-2 {
+  font-size: 3em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main .stayTuned-container .contacts ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 20px 0;
+}
+
+main .stayTuned-container .contacts ul li {
+  margin: 0 20px;
+}
+
+main .stayTuned-container .contacts ul li .contacts-link {
+  color: black;
+}
+
+main .stayTuned-container .contacts ul li .contacts-link:hover {
+  color: #2c2c2c;
+}
+
+@media only screen and (max-width: 870px) {
+  main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
+  main .countdown-container {
+    padding: 20px 0;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: none;
+    color: black;
+  }
+}
+/*# sourceMappingURL=main.css.map */

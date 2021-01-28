@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    width: stretch;
+    height: stretch;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    
+    height: stretch;
+
+    position: relative;
+
+    div {
+        height: stretch;
+        width: stretch;
+        text-align: center;
+
+        top: 0; bottom: 0; right: 0; left: 0;
+    }
+
+    .countdown-container {
+        color: white;
+        background: rgb(0,212,255);
+        background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(120,174,242,1) 100%);
+
+        padding: 100% 0;
+        height: stretch;
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            align-content: center;
+
+            span {
+                font-size: 60px;
+                font-weight: bolder;
+                font-family: "Montserrat";
+            }
+
+            div {
+                font-size: 13px;
+                font-weight: bold;
+                font-family: "Montserrat";
+            }
+        }
+    }
+
+    .stayTuned-container {
+        .title-1 {
+            font-family: "Montserrat";
+            font-size: 1.5em;
+            letter-spacing: 5px;
+        }
+
+        .title-2 {
+            font-size: 3em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .contacts {
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+
+                padding: 20px 0;
+
+                li {
+                    margin: 0 20px;
+
+                    .contacts-link {
+                        color: black;
+                    }
+
+                    .contacts-link:hover {
+                        color: rgb(44, 44, 44);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    main {
+        position: absolute;
+        top: 0; bottom: 0; right: 0; left: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        align-items: flex-start;
+        align-self: flex-start;
+        align-content: flex-start;
+
+        .countdown-container {
+            padding: 20px 0;
+            height: fit-content;
+
+            background: none;
+            color: black;
+        }
+    }
+  }
