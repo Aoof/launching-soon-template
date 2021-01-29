@@ -26,6 +26,8 @@ app.use(flash());
 app.use(function(req, res, next) {
     res.locals.errors = req.flash('errors');
     res.locals.success = req.flash('success');
+
+    res.locals.title = process.env.TITLE
     next();
 })
 
